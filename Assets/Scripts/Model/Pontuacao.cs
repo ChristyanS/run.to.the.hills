@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class Pontuacao
+﻿public class Pontuacao
 {
     public int pontos { get; private set; }
     private static Pontuacao instance;

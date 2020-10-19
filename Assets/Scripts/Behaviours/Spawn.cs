@@ -16,7 +16,7 @@ public class Spawn : MonoBehaviour
     {
         contadorTempo += Time.deltaTime;
 
-        if (!(contadorTempo >= intervaloDeSpawn)) return;
+        if (!(contadorTempo >= Fase.Instance.AjustaVelocidadeDiminui(intervaloDeSpawn))) return;
 
         contadorTempo = 0;
 

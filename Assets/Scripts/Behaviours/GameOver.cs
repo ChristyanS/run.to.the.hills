@@ -15,7 +15,7 @@ public class GameOver : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("space")||Input.touchCount > 0)
         {
             SceneManager.LoadScene("Fase");
             Pontuacao.Instance.ResetaPontos();

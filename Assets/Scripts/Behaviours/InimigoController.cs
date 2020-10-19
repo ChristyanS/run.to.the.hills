@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class InimigoController : MonoBehaviour
 {
@@ -9,11 +10,13 @@ public class InimigoController : MonoBehaviour
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
+        velocidade = Math.Abs(velocidade);
     }
 
     private void FixedUpdate()
     {
-        _rigidbody2D.velocity = new Vector2(velocidade, _rigidbody2D.velocity.y);
+        _rigidbody2D.velocity =
+            new Vector2(-Fase.Instance.AjustaVelocidade(velocidade), _rigidbody2D.velocity.y);
     }
 
     private void OnTriggerEnter2D(Collider2D collider2D)
@@ -22,7 +25,7 @@ public class InimigoController : MonoBehaviour
         {
             Destroy(transform.gameObject);
         }
-        
+
         if (collider2D.CompareTag(TagConstantes.PONTUADOR))
         {
             Pontuacao.Instance.AdicionaPontos();

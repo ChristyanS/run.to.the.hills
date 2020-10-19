@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4102168904625670939}
   - component: {fileID: 8535265047174105033}
   - component: {fileID: 474951059420935378}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Esqueleto
   m_TagString: Inimigo
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7282357109604725570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.7289367, y: -0.37262875, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
+  m_LocalScale: {x: -0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -162,4 +162,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12a8d8b07dcb6614e844fc281b7a0442, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: -2
+  velocidade: 2

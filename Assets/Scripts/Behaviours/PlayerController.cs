@@ -24,25 +24,38 @@ public class PlayerController : MonoBehaviour
     private float _contadorTempo;
     private Vector2 _offSetInicial;
     private Vector2 _sizeInicial;
-    private Vector2 _startTouchPosition;
-    private Vector2 _endTouchPosition;
+    private Vector2 _startTouchPositionUp;
+    private Vector2 _endTouchPositionUp;
+    private Vector2 _startTouchPositionDown;
+    private Vector2 _endTouchPositionDown;
+    
+    private bool _estaDeslizando;
 
-    private void TouchCheck()
-    {
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            _startTouchPosition = Input.GetTouch(0).position;
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-            _endTouchPosition = Input.GetTouch(0).position;
-    }
 
     public bool TouchParaCima()
     {
-        return _endTouchPosition.y > _startTouchPosition.y;
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            _startTouchPositionUp = Input.GetTouch(0).position;
+        else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+        {
+            _endTouchPositionUp = Input.GetTouch(0).position;
+            return _endTouchPositionUp.y > _startTouchPositionUp.y;
+        }
+
+        return false;
     }
 
     public bool TouchParaBaixo()
     {
-        return _endTouchPosition.y < _startTouchPosition.y;
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+            _startTouchPositionUp = Input.GetTouch(0).position;
+        else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+        {
+            _endTouchPositionUp = Input.GetTouch(0).position;
+            return _endTouchPositionUp.y < _startTouchPositionUp.y;
+        }
+
+        return false;
     }
 
     private void Start()
@@ -57,7 +70,6 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        TouchCheck();
         Pular();
         Deslizar();
         Animation();
@@ -69,7 +81,7 @@ public class PlayerController : MonoBehaviour
     private void Animation()
     {
         _animator.SetBool(Pulo, !EstaNoChao());
-        _animator.SetBool(Desliza, EstaDeslizando());
+        _animator.SetBool(Desliza, _estaDeslizando);
     }
 
     /// <summary>
@@ -81,6 +93,10 @@ public class PlayerController : MonoBehaviour
 
         _rigidbody2D.AddForce(transform.up * forcaPulo);
         _audioSource.PlayOneShot(soundJump);
+        _contadorTempo = 0;
+        _boxCollider2D.offset = _offSetInicial;
+        _boxCollider2D.size = _sizeInicial;
+        _estaDeslizando = false;
     }
 
     /// <summary>
@@ -88,7 +104,7 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     public void Deslizar()
     {
-        if (EstaDeslizando())
+        if (_estaDeslizando)
         {
             _contadorTempo += Time.deltaTime;
             if (_contadorTempo >= tempoMaximoDeslizando)
@@ -96,24 +112,17 @@ public class PlayerController : MonoBehaviour
                 _contadorTempo = 0;
                 _boxCollider2D.offset = _offSetInicial;
                 _boxCollider2D.size = _sizeInicial;
+                _estaDeslizando = false;
             }
         }
 
         if (!PodeDeslizar()) return;
-
+        
+        _rigidbody2D.AddForce(transform.up * -forcaPulo);
         _boxCollider2D.offset = offSetDeslizando;
         _boxCollider2D.size = sizeDeslizando;
         _audioSource.PlayOneShot(soundSlide);
-        _contadorTempo += Time.deltaTime;
-    }
-
-    /// <summary>
-    /// verifica se o player está deslizando
-    /// </summary>
-    /// <returns>se está deslizando retorna true e false caso o contrario</returns>
-    public bool EstaDeslizando()
-    {
-        return _contadorTempo > 0;
+        _estaDeslizando = true;
     }
 
     /// <summary>
@@ -122,7 +131,7 @@ public class PlayerController : MonoBehaviour
     /// <returns></returns>
     public bool PodeDeslizar()
     {
-        return (Input.GetKeyDown(botaoDesliza) || TouchParaBaixo()) && EstaNoChao() && !EstaDeslizando();
+        return  (Input.GetKey(botaoDesliza) || TouchParaBaixo()) && !_estaDeslizando;
     }
 
     /// <summary>
@@ -131,7 +140,7 @@ public class PlayerController : MonoBehaviour
     /// <returns></returns>
     public bool PodePular()
     {
-        return (Input.GetKeyDown(botaoPulo) || TouchParaCima()) && EstaNoChao() && !EstaDeslizando();
+        return EstaNoChao() && (Input.GetKey(botaoPulo) || TouchParaCima());
     }
 
     /// <summary>
