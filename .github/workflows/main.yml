@@ -1,0 +1,41 @@
+  
+name: Build
+on: [push]	
+env:
+  UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+jobs:	
+  build:
+    name: Build my project ✨
+    runs-on: ubuntu-latest
+    steps:	
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+ 
+      - name: Active Cache
+        uses: actions/cache@v1.1.0
+        with:
+          path: Library
+          key: Library
+          
+      - name: Unity - Test runner
+        uses: webbertakken/unity-test-runner@v1.7
+        id: testRunner
+        with:
+           customParameters: -nographics
+           unityVersion: 2020.1.0f1
+           
+      - name: Unity - Builder
+        uses: webbertakken/unity-builder@v1.4
+        with:
+          allowDirtyBuild: true
+          unityVersion: 2020.1.0f1
+          targetPlatform: StandaloneWindows64
+          customParameters: -nographics
+      
+      - name: Upload Build
+        uses: actions/upload-artifact@v1
+        with:
+          name: Build
+          path: build
