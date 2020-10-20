@@ -18,20 +18,13 @@ jobs:
         with:
           path: Library
           key: Library
-          
-      - name: Unity - Test runner
-        uses: webbertakken/unity-test-runner@v1.7
-        id: testRunner
-        with:
-           customParameters: -nographics
-           unityVersion: 2020.1.0f1
            
       - name: Unity - Builder
         uses: webbertakken/unity-builder@v1.4
         with:
           allowDirtyBuild: true
           unityVersion: 2020.1.0f1
-          targetPlatform: StandaloneWindows64
+          targetPlatform: Android
           customParameters: -nographics
       
       - name: Upload Build
