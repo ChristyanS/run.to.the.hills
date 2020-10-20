@@ -2,98 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="889ee280-eb0c-462d-bc84-60e22ed593a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.RunToTheHills/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.RunToTheHills/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/player-jump.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/player-jump.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/player-run.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/player-run.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/player-slide.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/player-slide.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/player.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player/player.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PlayerController.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RunToTheHills/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RunToTheHills/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RunToTheHills/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RunToTheHills/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RunToTheHills/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RunToTheHills/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Fase.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Fase.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu Inicial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu Inicial.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Behaviours/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Behaviours/PlayerController.cs" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/PlayerController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12">
-              <caret line="123" column="5" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
-              <folding>
-                <marker date="1565910449116" expanded="false" signature="6:53" ph="..." />
-                <marker date="1565910449116" expanded="true" signature="100:4738" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="996:1292" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="1325:1397" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="1431:1503" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="1529:1839" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="1871:1963" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="1969:2042" ph="/// Controla as animações do jogador ... " />
-                <marker date="1565910449116" expanded="true" signature="2071:2185" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="2191:2314" ph="/// Responsável por fazer o Player pular, O jogador só poderá pular se estiver no chão ... " />
-                <marker date="1565910449116" expanded="true" signature="2338:2487" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="2493:2622" ph="/// Responsável por fazer o Player deslizar, O jogador só poderá deslizar se estiver no chão ... " />
-                <marker date="1565910449116" expanded="true" signature="2649:3209" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="2685:2980" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="2798:2970" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="3215:3376" ph="/// verifica se o player está deslizando ... " />
-                <marker date="1565910449116" expanded="true" signature="3409:3456" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="3462:3565" ph="/// Verifica se o Player pode deslizar ... " />
-                <marker date="1565910449116" expanded="true" signature="3596:3714" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="3720:3834" ph="/// Verifica se o Player tem condições para pular ... " />
-                <marker date="1565910449116" expanded="true" signature="3862:3976" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="3982:4136" ph="/// Verifica se o jogador está tocando no chão ... " />
-                <marker date="1565910449116" expanded="true" signature="4165:4283" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="4289:4357" ph="/// Desenha Gizmos Para a Unity ... " />
-                <marker date="1565910449116" expanded="true" signature="4396:4525" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="4587:4736" ph="{...}" />
-                <marker date="1565910449116" expanded="true" signature="4661:4730" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>desliza</find>
-      <find>pula</find>
-      <find>noChao</find>
-      <find>texto</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/StartGame.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constantes/NomesConstantes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/InfinityRun/Assets/Script/ObjetoMoveBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3BD64DD8-08F0-46B3-8BA2-FB6667D0ADC4/b3/7523851e/Transform.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3BD64DD8-08F0-46B3-8BA2-FB6667D0ADC4/fb/8255e041/PlayerPrefs.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constantes/TagConstantes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/View/PontuacaoView.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/InimigoController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/GameUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///PlayerController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enums/ValoresPersistidosEnum.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/GameOver.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/StartGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Constantes/NomesConstantes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Model/Pontuacao.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3BD64DD8-08F0-46B3-8BA2-FB6667D0ADC4/88/0162c453/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/InimigoController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/Downloads/InfinityRun/Assets/Script/GameOver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/Spawn.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -125,52 +60,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Model/Pontuacao.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GameOver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Behaviours/GameUI.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="176" />
-    <option name="y" value="1078" />
-    <option name="width" value="1026" />
-    <option name="height" value="546" />
-  </component>
+  <component name="ProjectId" id="1j7JXrRh7JYamMRLrNbZxqyB9S1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="UnityExplorer" proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="AssemblyExplorer" />
-      <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <option name="show-hidden-items" value="false" />
-        <option name="show-project-names" value="true" />
-      </pane>
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -182,31 +88,17 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
-      <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -228,84 +120,18 @@
       <workItem from="1565829266361" duration="1640000" />
       <workItem from="1565873848576" duration="4840000" />
       <workItem from="1565884777962" duration="19411000" />
+      <workItem from="1603149317062" duration="3085000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43635000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-6" y="760" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20347957" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3290735" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Performance Profiler" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Unity" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Unit Tests" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.3290735" />
-      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20347957" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3290735" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Performance Profiler" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Unity" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Unit Tests" order="13" />
-      <window_info anchor="bottom" id="Terminal" order="14" weight="0.3290735" />
-      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -315,299 +141,5 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3BD64DD8-08F0-46B3-8BA2-FB6667D0ADC4/fb/8255e041/PlayerPrefs.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BackgroundScroll.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/StartGame.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SpawnBehaviourScript.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InstanciateBackground.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BackgroundScrolling.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ObjetoMoveBehaviour.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MoveOffSet.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameOver.cs" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3BD64DD8-08F0-46B3-8BA2-FB6667D0ADC4/88/0162c453/Component.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3BD64DD8-08F0-46B3-8BA2-FB6667D0ADC4/b3/7523851e/Transform.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerBehaviour.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ValoresPersistidosEnum.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Spawn.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/SpawnBehaviourScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/MoveOffSet.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TagConstantes.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/InfinityRun/Assets/Script/ObjetoMoveBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/PlayerBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Constantes/NomesConstantes.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
-          <folding>
-            <marker date="1565895564759" expanded="true" signature="28:75" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/ObjetoMoveBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enums/ValoresPersistidosEnum.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding>
-            <marker date="1565898380707" expanded="true" signature="34:50" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/View/PontuacaoView.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="18" />
-          <folding>
-            <marker date="1565896810857" expanded="true" signature="6:40" ph="..." />
-            <marker date="1565896810857" expanded="true" signature="84:310" ph="{...}" />
-            <marker date="1565896810857" expanded="true" signature="144:202" ph="{...}" />
-            <marker date="1565896810857" expanded="true" signature="229:308" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Constantes/TagConstantes.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          <folding>
-            <marker date="1565897649141" expanded="true" signature="26:175" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/NuvemBehavior.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/Spawn.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="49" column="67" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="67" />
-          <folding>
-            <marker date="1565895264967" expanded="false" signature="6:52" ph="..." />
-            <marker date="1565895264967" expanded="true" signature="88:1409" ph="{...}" />
-            <marker date="1565895264967" expanded="true" signature="410:685" ph="{...}" />
-            <marker date="1565895264967" expanded="true" signature="691:781" ph="/// Responsável por instanciar os inimigos Terrestres ... " />
-            <marker date="1565895264967" expanded="true" signature="827:932" ph="{...}" />
-            <marker date="1565895264967" expanded="true" signature="938:1024" ph="/// Responsável por instanciar os inimigos Aereos ... " />
-            <marker date="1565895264967" expanded="true" signature="1066:1163" ph="{...}" />
-            <marker date="1565895264967" expanded="true" signature="1169:1248" ph="/// Responsável por instanciar os inimigos ... " />
-            <marker date="1565895264967" expanded="true" signature="1324:1407" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/InimigoController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <marker date="1565905035431" expanded="true" signature="66:686" ph="{...}" />
-            <marker date="1565905035431" expanded="true" signature="162:226" ph="{...}" />
-            <marker date="1565905035431" expanded="true" signature="258:352" ph="{...}" />
-            <marker date="1565905035431" expanded="true" signature="410:684" ph="{...}" />
-            <marker date="1565905035431" expanded="true" signature="477:540" ph="{...}" />
-            <marker date="1565905035431" expanded="true" signature="609:678" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/SpawnNuvens.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Model/Pontuacao.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <marker date="1565907428387" expanded="true" signature="42:630" ph="{...}" />
-            <marker date="1565907428387" expanded="true" signature="152:164" ph="{...}" />
-            <marker date="1565907428387" expanded="true" signature="170:242" ph="/// Adiciona pontos para o jogador  ... " />
-            <marker date="1565907428387" expanded="true" signature="275:305" ph="{...}" />
-            <marker date="1565907428387" expanded="true" signature="337:369" ph="{...}" />
-            <marker date="1565907428387" expanded="true" signature="375:440" ph="/// Singleton para Pontuacao ... " />
-            <marker date="1565907428387" expanded="true" signature="477:628" ph="{...}" />
-            <marker date="1565907428387" expanded="true" signature="495:622" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/StartGame.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding>
-            <marker date="1565901642451" expanded="false" signature="6:113" ph="..." />
-            <marker date="1565901642451" expanded="true" signature="153:313" ph="{...}" />
-            <marker date="1565901642451" expanded="true" signature="216:311" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/GameOver.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <marker date="1565907469096" expanded="true" signature="6:75" ph="..." />
-            <marker date="1565907469096" expanded="true" signature="114:1359" ph="{...}" />
-            <marker date="1565907469096" expanded="true" signature="201:270" ph="{...}" />
-            <marker date="1565907469096" expanded="true" signature="297:459" ph="{...}" />
-            <marker date="1565907469096" expanded="true" signature="342:453" ph="{...}" />
-            <marker date="1565907469096" expanded="true" signature="465:623" ph="/// Verifica se o record foi batido ... " />
-            <marker date="1565907469096" expanded="true" signature="654:771" ph="{...}" />
-            <marker date="1565907469096" expanded="true" signature="777:868" ph="/// Responsável por setar o record caso tenha ocorrido ... " />
-            <marker date="1565907469096" expanded="true" signature="907:1067" ph="{...}" />
-            <marker date="1565907469096" expanded="true" signature="940:1061" ph="{...}" />
-            <marker date="1565907469096" expanded="true" signature="1073:1145" ph="/// Configura os texto de pontuação ... " />
-            <marker date="1565907469096" expanded="true" signature="1179:1357" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/InfinityRun/Assets/Script/GameOver.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Behaviours/PlayerController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="123" column="5" lean-forward="true" selection-start-line="123" selection-start-column="5" selection-end-line="123" selection-end-column="5" />
-          <folding>
-            <marker date="1565910449116" expanded="false" signature="6:53" ph="..." />
-            <marker date="1565910449116" expanded="true" signature="100:4738" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="996:1292" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="1325:1397" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="1431:1503" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="1529:1839" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="1871:1963" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="1969:2042" ph="/// Controla as animações do jogador ... " />
-            <marker date="1565910449116" expanded="true" signature="2071:2185" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="2191:2314" ph="/// Responsável por fazer o Player pular, O jogador só poderá pular se estiver no chão ... " />
-            <marker date="1565910449116" expanded="true" signature="2338:2487" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="2493:2622" ph="/// Responsável por fazer o Player deslizar, O jogador só poderá deslizar se estiver no chão ... " />
-            <marker date="1565910449116" expanded="true" signature="2649:3209" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="2685:2980" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="2798:2970" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="3215:3376" ph="/// verifica se o player está deslizando ... " />
-            <marker date="1565910449116" expanded="true" signature="3409:3456" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="3462:3565" ph="/// Verifica se o Player pode deslizar ... " />
-            <marker date="1565910449116" expanded="true" signature="3596:3714" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="3720:3834" ph="/// Verifica se o Player tem condições para pular ... " />
-            <marker date="1565910449116" expanded="true" signature="3862:3976" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="3982:4136" ph="/// Verifica se o jogador está tocando no chão ... " />
-            <marker date="1565910449116" expanded="true" signature="4165:4283" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="4289:4357" ph="/// Desenha Gizmos Para a Unity ... " />
-            <marker date="1565910449116" expanded="true" signature="4396:4525" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="4587:4736" ph="{...}" />
-            <marker date="1565910449116" expanded="true" signature="4661:4730" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
