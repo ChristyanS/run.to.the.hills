@@ -24,48 +24,46 @@ public class PlayerController : MonoBehaviour
     private float _contadorTempo;
     private Vector2 _offSetInicial;
     private Vector2 _sizeInicial;
-    private Vector2 _startTouchPositionUp;
-    private Vector2 _endTouchPositionUp;
-    private Vector2 _startTouchPositionDown;
-    private Vector2 _endTouchPositionDown;
+    public bool cliquePulo { get; set; }
+    public bool cliqueDesliza { get; set; }
 
     private bool _estaDeslizando;
 
 
-    public bool TouchParaCima()
-    {
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            _startTouchPositionUp = Input.GetTouch(0).position;
-        else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
-        {
-            _endTouchPositionUp = Input.GetTouch(0).position;
-            return _endTouchPositionUp.y > _startTouchPositionUp.y;
-        }
-        else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-        {
-            _startTouchPositionUp = Vector2.zero;
-            _endTouchPositionUp = Vector2.zero;
-        }
-
-        return false;
-    }
-
-    public bool TouchParaBaixo()
-    {
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
-            _startTouchPositionDown = Input.GetTouch(0).position;
-        else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
-        {
-            _endTouchPositionDown = Input.GetTouch(0).position;
-            return _endTouchPositionDown.y < _startTouchPositionDown.y;
-        }else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-        {
-            _startTouchPositionDown = Vector2.zero;
-            _endTouchPositionDown = Vector2.zero;
-        }
-
-        return false;
-    }
+    // public bool TouchParaCima()
+    // {
+    //     if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+    //         _startTouchPositionUp = Input.GetTouch(0).position;
+    //     else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+    //     {
+    //         _endTouchPositionUp = Input.GetTouch(0).position;
+    //         return _endTouchPositionUp.y > _startTouchPositionUp.y;
+    //     }
+    //     else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+    //     {
+    //         _startTouchPositionUp = Vector2.zero;
+    //         _endTouchPositionUp = Vector2.zero;
+    //     }
+    //
+    //     return false;
+    // }
+    //
+    // public bool TouchParaBaixo()
+    // {
+    //     if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+    //         _startTouchPositionDown = Input.GetTouch(0).position;
+    //     else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)
+    //     {
+    //         _endTouchPositionDown = Input.GetTouch(0).position;
+    //         return _endTouchPositionDown.y < _startTouchPositionDown.y;
+    //     }else if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
+    //     {
+    //         _startTouchPositionDown = Vector2.zero;
+    //         _endTouchPositionDown = Vector2.zero;
+    //     }
+    //
+    //     return false;
+    // }
 
 
     private void Start()
@@ -100,7 +98,7 @@ public class PlayerController : MonoBehaviour
     public void Pular()
     {
         if (!PodePular()) return;
-
+        cliquePulo = false;
         _rigidbody2D.AddForce(transform.up * forcaPulo);
         _audioSource.PlayOneShot(soundJump);
         _contadorTempo = 0;
@@ -127,7 +125,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (!PodeDeslizar()) return;
-
+        cliqueDesliza = false;
         _rigidbody2D.AddForce(transform.up * -forcaPulo);
         _boxCollider2D.offset = offSetDeslizando;
         _boxCollider2D.size = sizeDeslizando;
@@ -141,7 +139,7 @@ public class PlayerController : MonoBehaviour
     /// <returns></returns>
     public bool PodeDeslizar()
     {
-        return (Input.GetKey(botaoDesliza) || TouchParaBaixo()) && !_estaDeslizando;
+        return (Input.GetKey(botaoDesliza) || cliqueDesliza) && !_estaDeslizando;
     }
 
     /// <summary>
@@ -150,7 +148,7 @@ public class PlayerController : MonoBehaviour
     /// <returns></returns>
     public bool PodePular()
     {
-        return EstaNoChao() && (Input.GetKey(botaoPulo) || TouchParaCima());
+        return EstaNoChao() && (Input.GetKey(botaoPulo) || cliquePulo);
     }
 
     /// <summary>
