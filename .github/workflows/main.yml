@@ -22,7 +22,6 @@ jobs:
       - name: Unity - Builder
         uses: webbertakken/unity-builder@v1.4
         with:
-          allowDirtyBuild: true
           unityVersion: 2020.1.0f1
           targetPlatform: Android
           customParameters: -nographics
